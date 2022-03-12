@@ -26,9 +26,20 @@ app.use(cors(corsOptions)); //^ cualquier origen puede acceder a nuestro microse
 
 app.use(router) //& vamos a usar el router que nos provee express
 
+//^ ====== enlazamos y enviamos los archivos del directorio con las carpetas ==========
+
+app.use('/home', (req,res) => {
+
+    res.sendFile(path.join(__dirname+'/html/index.html')) //~ con esto unimos nuestro directorio con las carpetas del cproyecto, html y enviamos el archivo
+});
+
+//^====================================================================================
+
 app.get('/', (req,res)=> {
     res.json('hola desde app.js todo OK por aqui')
 })
+
+//^ ==================   PUERTO DE ESCUCHA    =========================================
 
 app.listen(PORT, () => {
     console.log(("escuchando desde el localhost:"+PORT+" ").inverse);
