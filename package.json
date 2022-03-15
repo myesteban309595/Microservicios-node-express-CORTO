@@ -1,7 +1,6 @@
 {
   "name": "microservicios-node-express-corto",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,8 +11,18 @@
   "dependencies": {
     "colors": "^1.4.0",
     "cors": "^2.8.5",
-    "create-react-app": "^5.0.0",
+    "create-react-app": "^1.2.1",
     "dotenv": "^16.0.0",
-    "express": "^4.17.3"
-  }
+    "express": "^4.17.3",
+    "nodemon": "^2.0.15"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/myesteban309595/Microservicios-node-express-CORTO.git"
+  },
+  "bugs": {
+    "url": "https://github.com/myesteban309595/Microservicios-node-express-CORTO/issues"
+  },
+  "homepage": "https://github.com/myesteban309595/Microservicios-node-express-CORTO#readme",
+  "description": ""
 }
